@@ -8,7 +8,7 @@ const App = () => {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault()
-    await axios.post('http://localhost:5002/api/v1/sendChat', { chatMsg })
+    await axios.post('https://slack-backend-ssu6.onrender.com/api/v1/sendChat', { chatMsg })
   }
 
   const onChangeHandler = (e) => {
